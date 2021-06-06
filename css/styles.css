@@ -396,10 +396,9 @@ li .nav-link-tel::before {
 }
 
 .all_main_h3 .item {
-  /* width: 270px; */
+  /* display: flex; */
   height: 251px;
   flex-wrap: wrap;
-  display: flexbox;
 }
 
 .all_main_h3 .item:not(:last-child) {

@@ -432,7 +432,6 @@ li .nav-link-tel::before {
   display: var(--display-property-flex);
   justify-content: center;
   align-items: center;
-
   border-radius: 4px;
   background-image: url(/images/icon/diagram.svg);
 }
@@ -444,7 +443,6 @@ li .nav-link-tel::before {
   display: var(--display-property-flex);
   justify-content: center;
   align-items: center;
-
   border-radius: 4px;
   background-image: url(/images/icon/astronaut.svg);
 }

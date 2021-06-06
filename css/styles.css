@@ -212,10 +212,13 @@ h1 span {
   border-radius: 4px;
   border: 1px solid transparent;
 }
-studiocolor_bottom .font-size-button-portfolio:focus,
+.font-size-button-portfolio:focus,
 .font-size-button-portfolio:hover {
   background-color: var(--highlight-color);
   color: var(--main-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .all_portfolio_button {
@@ -414,18 +417,6 @@ li .nav-link-tel::before {
   background-color: var(--main-background-color);
 }
 
-.icon_benefits_antenna {
-}
-
-.icon_benefits_clock {
-}
-
-.icon_benefits_diagram {
-}
-
-.icon_benefits_astronaut {
-}
-
 .text-title-h3-index {
   margin-bottom: 10px;
   font-size: 14px;
@@ -552,10 +543,14 @@ li .nav-link-tel::before {
 }
 
 .footer_all_box {
-  display: flex;
-  flex-wrap: wrap;
+  margin-right: 70px;
+  display: block;
   justify-content: flex-start;
   align-items: center;
+}
+
+.footer_box {
+  display: flex;
 }
 
 .address_index {
@@ -563,11 +558,6 @@ li .nav-link-tel::before {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
-}
-
-.footer_all_box_contacts {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer_all_box_contacts li:not(:last-child) {
@@ -587,22 +577,46 @@ li .nav-link-tel::before {
   color: var(--highlight-color);
 }
 
-.our-icons {
-  width: 206px;
-  height: 80px;
-  margin: 0;
+.our_box {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 40px;
   padding: 0;
-  display: inline-flex;
-  flex-direction: column;
 }
 
 .our_title {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
   font-size: 14px;
-  line-height: 1, 142;
+  line-height: 1.142;
   letter-spacing: 0.03em;
-  color: var(--main-background-color);
   text-transform: uppercase;
-  text-align: center;
+  color: var(--main-background-color);
+}
+
+.our_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.our_social {
+  fill: var(--icon-social-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.our_social:hover {
+  fill: var(--main-background-color);
+  background-color: var(--highlight-color);
+}
+
+.our_icon li:not(:last-child) {
+  margin-right: 10px;
 }

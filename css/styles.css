@@ -403,7 +403,7 @@ li .nav-link-tel::before {
   margin-right: 30px;
 }
 
-.icon_benefits_antenna {
+.icon_benefits {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -411,40 +411,19 @@ li .nav-link-tel::before {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background-image: url(/images/icon/antenna.svg);
+  background-color: var(--main-background-color);
+}
+
+.icon_benefits_antenna {
 }
 
 .icon_benefits_clock {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  display: var(--display-property-flex);
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-image: url(/images/icon/clock.svg);
 }
 
 .icon_benefits_diagram {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  display: var(--display-property-flex);
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-image: url(/images/icon/diagram.svg);
 }
 
 .icon_benefits_astronaut {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  display: var(--display-property-flex);
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-image: url(/images/icon/astronaut.svg);
 }
 
 .text-title-h3-index {

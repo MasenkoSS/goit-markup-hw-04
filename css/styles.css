@@ -377,6 +377,7 @@ li .nav-link-tel::before {
 }
 
 .item_team {
+  background-color: var(--main-background-color);
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -396,6 +397,7 @@ li .nav-link-tel::before {
 }
 
 .item_team_overall {
+  background-color: var(--main-background-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -469,6 +471,15 @@ li .nav-link-tel::before {
   display: var(--display-property-flex);
   width: 170px;
   height: 92px;
+}
+
+.customers_icons:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers_icons_link {
+  width: 100%;
+  height: 100%;
   padding-top: 14.43px;
   padding-bottom: 14.43px;
   padding-left: 32px;
@@ -480,12 +491,9 @@ li .nav-link-tel::before {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.customers_icons:not(:last-child) {
-  margin-right: 30px;
-}
 
-.customers_icons:focus,
-.customers_icons:hover {
+.customers_icons_link:focus,
+.customers_icons_link:hover {
   border-color: var(--highlight-color);
   fill: var(--highlight-color);
 }
@@ -518,13 +526,18 @@ li .nav-link-tel::before {
 }
 
 .portfolio_element {
+  max-width: 100%;
   box-sizing: border-box;
   width: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   cursor: pointer;
-  background: #ffffff;
+  background: var(--main-background-color);
+}
+
+.portfolio_element img {
+  max-width: 100%;
 }
 
 .portfolio_element:focus,
